@@ -421,6 +421,19 @@ body {
     box-sizing: border-box;
 }
 
+.button {
+    width: 158px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    color: white;
+    background-color: #264699;
+    background-image: linear-gradient(left, rgba(38,70,153,1) 0%, rgba(73,155,234,1) 100%);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
 .header {
     height: 92px;
     position: relative;
@@ -482,8 +495,8 @@ body {
 
 .content h1 {
     margin: 0;
-    position: relative;
-    z-index: 4;
+
+
 }
 
 .intro {
@@ -494,12 +507,154 @@ body {
     z-index: 4;
 }
 
+.gettheapp {
+    height: 331px;
+    width: 480px;
+    position: relative;
+    top: 303px;
+}
+
+.orange {
+    background: #fc6a42;
+    position: absolute;
+    bottom: 0px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.blue {
+    position: absolute;
+    bottom: 0px;
+    left: 171px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+
+}
+
+
+
+.gettheapp h1 {
+    font-size: 60px;
+    color: white;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+.gettheapp p {
+    font-size: 18px;
+    margin: 0px;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 50px;
+    color: white;
+}
+
+.phone {
+    width: 552px;
+    height: 631px;
+    background: pink;
+    position: relative;
+    left: 557px;
+    bottom: 100px;
+    background: url("../images/phone.png") no-repeat;
+    background-position: center top;
+}
+
+.circletemp{
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    left: 438px;
+    top: 86px;
+    background: url("../images/circle-tmp.png");
+}
+
+.circlesunny {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 296px;
+    background: url("../images/circle-sunny.png");
+
+
+}
+.circlelondon {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 462px;
+    top: 268px;
+    background: url("../images/circle-london.png");
+
+}
+.circlerio {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: 576px;
+    left: 457px;
+    background: url("../images/circle-rio.png");
+
+}
+
+.title {
+    z-index: 4;
+    position: relative;
+
+}
+
+.title h2 {
+    font-size: 36px;
+    color: #648cff;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-style: normal;
+
+
+
+}
+.title p {
+    color: #999999;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .features {
     height: 716px;
     background: white;
     text-align: center;
     padding-top: 100px;
     margin-top: -100px;
+    border: black 1px solid;
+}
+
+.advantage {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.advantage-in {
+
+}
+
+.advantage-in p {
+    overflow: hidden;
+
+
+}
+
+.left {
+    float: left;
 }
 
 .widgets {
