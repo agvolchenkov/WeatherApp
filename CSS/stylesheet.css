@@ -21,6 +21,17 @@
 }
 
 @font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Light.eot');
+    src: url('../fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ubuntu-Light.woff2') format('woff2'),
+    url('../fonts/Ubuntu-Light.woff') format('woff'),
+    url('../fonts/Ubuntu-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?c6oluu');
     src:  url('../fonts/icomoon.eot?c6oluu#iefix') format('embedded-opentype'),
@@ -421,6 +432,11 @@ body {
     box-sizing: border-box;
 }
 
+.wrapper {
+    width: 1171px;
+    margin: auto;
+}
+
 .button {
     width: 158px;
     height: 50px;
@@ -535,8 +551,6 @@ body {
 
 }
 
-
-
 .gettheapp h1 {
     font-size: 60px;
     color: white;
@@ -607,6 +621,7 @@ body {
 .title {
     z-index: 4;
     position: relative;
+    text-align: center;
 
 }
 
@@ -616,6 +631,7 @@ body {
     font-family: 'Ubuntu';
     font-weight: bold;
     font-style: normal;
+    margin: 0px;
 
 
 
@@ -625,6 +641,7 @@ body {
     font-family: 'Ubuntu';
     font-weight: normal;
     font-style: normal;
+    margin: 0px;
 }
 
 
@@ -634,43 +651,94 @@ body {
     text-align: center;
     padding-top: 100px;
     margin-top: -100px;
-    border: black 1px solid;
 }
 
 .advantage {
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
+    position: relative;
+    z-index: 4;
 
 }
 
-.advantage-in {
+.advantage-in img {
+    margin-right: 20px;
+    float: left;
+
 
 }
 
 .advantage-in p {
+    text-align: justify;
     overflow: hidden;
-
-
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: #999999;
 }
 
-.left {
-    float: left;
+.advantage-in h3 {
+    text-align: justify;
+    overflow: hidden;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    margin: 0px;
+    color: #353854;
 }
+
+
 
 .widgets {
-    height: 500px;
+    height: 938px;
     background: white;
 }
 
+.screenshots {
 
-
-
-
-.wrapper {
-    width: 1171px;
-    margin: auto;
 }
 
+.clouds {
+    height: 875px;
+    position: relative;
+}
+
+
+
+.gradtext {
+    color: #ededf6;
+    font-size: 255px;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-style: normal;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 282px;
+
+}
+
+.display-cloudy {
+    background: url("../images/Display-cloudy.png");
+    background-position: center;
+    height: 605px;
+    width: 289px;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    z-index: 4;
+
+}
+
+.sunny {
+    height: 875px;
+}
+
+.rain {
+    height: 875px;
+}
 
 
 .stripes {
