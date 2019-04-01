@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <title>WeatherApp</title>
     <link rel="stylesheet" href="./CSS/stylesheet.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery.waterwheelCarousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+           $('.carousel').waterwheelCarousel({
+           });
+        });
+    </script>
 </head>
 <body>
-
-<div class="header">
+<header class="header">
     <div class="wrapper">
         <div class="logo">FUN WEATHER.</div>
         <div class="menu">
@@ -24,8 +31,7 @@
             <i class="icon-twitter"></i>
         </div>
     </div>
-</div>
-
+</header>
 <div class="content">
     <div class="intro">
         <div class="wrapper">
@@ -36,65 +42,173 @@
                 <div class="button blue">Features</div>
             </div>
             <div class="phone">
-                <div class="circletemp"></div>
-                <div class="circlesunny"></div>
-                <div class="circlelondon"></div>
-                <div class="circlerio"></div>
+                <div class="circle temp">9˚</div>
+                <div class="circle sunn">SUNNY</div>
+                <div class="circle london">LONDON</div>
+                <div class="circle rio">RIO</div>
             </div>
         </div>
     </div>
     <div class="stripes">
-        <div class="features">
-            <div class="wrapper">
-                <div class="title">
-                    <h2>PERFECT FEATURES</h2>
-                    <p>Only necessary</p>
+        <div class="features wrapper">
+            <div class="title">
+                <h2>PERFECT FEATURES</h2>
+                <p>Only necessary</p>
+            </div>
+            <div class="advantage">
+                <div class="advantage-in">
+                    <img src="images/crystal.png" class="left">
+                    <h3>Usability</h3>
+                    <p>Sometimes the simplest things are the<br>
+                        hardest to find. So we created a<br>
+                        new line for everyday life</p>
                 </div>
-                <div class="advantage">
-                    <div class="advantage-in">
-                        <img src="images/crystal.png" class="left">
-                        <h3>Usability</h3>
-                        <p>Sometimes the simplest things are the<br>
-                            hardest to find. So we created a<br>
-                            new line for everyday life</p>
-                    </div>
-                    <div class="advantage-in">
-                        <img src="images/parallax.png" class="left">
-                        <h3>Parallax</h3>
-                        <p>Sometimes the simplest things are the<br>
-                            hardest to find. So we created a<br>
-                            new line for everyday life</p>
-                    </div>
-                    <div class="advantage-in">
-                        <img src="images/color.png" class="left">
-                        <h3>Unlimites Colors</h3>
-                        <p>Sometimes the simplest things are the<br>
-                            hardest to find. So we created a<br>
-                            new line for everyday life</p>
-                    </div>
+                <div class="advantage-in">
+                    <img src="images/parallax.png" class="left">
+                    <h3>Parallax</h3>
+                    <p>Sometimes the simplest things are the<br>
+                        hardest to find. So we created a<br>
+                        new line for everyday life</p>
+                </div>
+                <div class="advantage-in">
+                    <img src="images/color.png" class="left">
+                    <h3>Unlimites Colors</h3>
+                    <p>Sometimes the simplest things are the<br>
+                        hardest to find. So we created a<br>
+                        new line for everyday life</p>
                 </div>
             </div>
         </div>
         <div class="widgets">
-            <div class="wrapper">
-                <div class="title">
-                    <h2>SIMPLE WIDGETS</h2>
-                    <p>Drag and Drop</p>
-                </div>
+            <div class="title">
+                <h2>SIMPLE WIDGETS</h2>
+                <p>Drag and Drop</p>
+            </div>
+            <div class="carousel">
+                <img src="./images/widget-left.jpg" alt="Image 1"/>
+                <img src="./images/widget-center.jpg" alt="Image 2"/>
+                <img src="./images/widget-right.jpg" alt="Image 3"/>
             </div>
         </div>
         <div class="screenshots">
             <div class="wrapper">
-            <div class="title">
-                <h2>SCREENSHOTS</h2>
-                <p>The brightest images</p>
-            </div>
-                <div class="clouds">
-                    <div class="gradtext">Cloudy</div>
-                    <div class="display-cloudy"></div>
+                <div class="title">
+                    <h2>SCREENSHOTS</h2>
+                    <p>The brightest images</p>
                 </div>
-                <div class="sunny"></div>
-                <div class="rain"></div>
+                <div class="cloudy">
+                    <div class="left-col">
+                        <div class="gradtext">Cloudy</div>
+                        <div class="display-cloudy place"></div>
+                        <div class="circle cloud">Cloudy</div>
+                        <div class="circle fifteen">15˚</div>
+                    </div>
+                    <div class="right-col">
+                        <div class="right-col-in">
+                            <div class="icon-clouds"></div>
+                            <h2>WHEN THE CLOUDS</h2>
+                            <p>Variable information on the air humidity, the<br>
+                                feeling of the weather, and the ability to share<br>
+                                this with your friends</p>
+                            <div class="icon-hum"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sunny">
+                    <div class="left-col">
+                        <div class="left-col-in">
+                            <div class="icon-sunny"></div>
+                            <h2>WHEN THE SUN</h2>
+                            <p>Variable information on the air humidity, the<br>
+                                feeling of the weather, and the ability to share<br>
+                                this with your friends</p>
+                            <div class="icon-hum"></div>
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <div class="gradtext">Sunny</div>
+                        <div class="display-sunny place"></div>
+                        <div class="circle sun">Sunny</div>
+                        <div class="circle thirtyfive">35˚</div>
+                    </div>
+                </div>
+                <div class="rainy">
+                    <div class="left-col">
+                        <div class="gradtext">Rainy</div>
+                        <div class="display-rainy place"></div>
+                        <div class="circle rain">Rainy</div>
+                        <div class="circle nine">9˚</div>
+                    </div>
+                    <div class="right-col">
+                        <div class="right-col-in">
+                            <div class="icon-clouds"></div>
+                            <h2>WHEN THE RAIN</h2>
+                            <p>Variable information on the air humidity, the<br>
+                                feeling of the weather, and the ability to share<br>
+                                this with your friends</p>
+                            <div class="icon-hum"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review wrapper">
+            <h2>WHAT PEOPLE ARE SAYING</h2>
+            <p>Reviews</p>
+        </div>
+        <div class="quotes wrapper">
+            <div class="left-column">
+                <div class="quotes-in">
+                    <div class="quote-open"><p>“</p></div>
+                    <p class="saying">What art offers is space - a certain breathing room<br>
+                        for the spirit.</p>
+                    <p class="author">John Updike</p>
+                    <div class="quote-close"><p>„</p></div>
+                </div>
+                <div class="quotes-in">
+                    <div class="quote-open"><p>“</p></div>
+                    <p class="saying">The only courage that matters is the kind that gets<br>
+                        you from one moment to the next.</p>
+                    <p class="author">Mignon McLaughlin</p>
+                    <div class="quote-close"><p>„</p></div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="quotes-in">
+                    <div class="quote-open"><p>“</p></div>
+                    <p class="saying">We do not see nature with our eyes, but with our<br>
+                        under standings and our hearts.</p>
+                    <p class="author">William Hazlitt</p>
+                    <div class="quote-close"><p>„</p></div>
+                </div>
+                <div class="quotes-in">
+                    <div class="quote-open"><p>“</p></div>
+                    <p class="saying">No man has a good enough memory to be a success-<br>
+                        ful liar.</p>
+                    <p class="author">Abraham Lincoln</p>
+                    <div class="quote-close"><p>„</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="download-section">
+            <div class="wrapper">
+            <div class="how-to">
+                <div>
+                    <h1>HOW DOWNLOAD THE APP</h1>
+                    <p>Just download the app from the store.<br>
+                        Simple, nice and user-friendly application of<br>
+                        theweather. Only relevant and useful information.</p>
+                </div>
+                <div class="stores">
+                <div class="app-store-icon"></div>
+                <div class="google-play-icon"></div>
+                </div>
+            </div>
+            <div class="group-display">
+                <div class="display-cloudy blur pos-cloudy"></div>
+                <div class="display-sunny pos-sunny"></div>
+                <div class="display-rainy blur pos-rainy"></div>
+            </div>
             </div>
         </div>
         <div class="bg">
@@ -116,10 +230,9 @@
 
 </div>
 
+<footer class="footer"> 372px
 
+</footer>
 
 </body>
 
-<footer>
-
-</footer>

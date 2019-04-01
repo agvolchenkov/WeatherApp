@@ -432,6 +432,22 @@ body {
     box-sizing: border-box;
 }
 
+h2 {
+    font-size: 36px;
+    color: #648cff;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-style: normal;
+    margin: 0px;
+}
+
+p {
+    font-family: 'Ubuntu';
+    font-weight: normal;
+    font-style: normal;
+    color: #999999;
+}
+
 .wrapper {
     width: 1171px;
     margin: auto;
@@ -449,6 +465,8 @@ body {
     text-align: center;
     font-size: 18px;
 }
+
+
 
 .header {
     height: 92px;
@@ -581,40 +599,53 @@ body {
     background-position: center top;
 }
 
-.circletemp{
+.temp {
     width: 57px;
     height: 57px;
     position: absolute;
     left: 438px;
     top: 86px;
-    background: url("../images/circle-tmp.png");
+    background: white;
+    color: #6ca3ff;
+    font-size: 20px;
+    line-height: 57px;
 }
 
-.circlesunny {
+.sunn {
     width: 90px;
     height: 90px;
     position: absolute;
     top: 296px;
-    background: url("../images/circle-sunny.png");
+    background: #fc6a42;
+    line-height: 90px;
+    font-size: 18px;
+    color: white;
 
 
 }
-.circlelondon {
+.london {
     width: 90px;
     height: 90px;
     position: absolute;
     left: 462px;
     top: 268px;
-    background: url("../images/circle-london.png");
+    background: #4466c9;
+    color: white;
+    text-align: center;
+    line-height: 90px;
+    font-size: 16px;
 
 }
-.circlerio {
+.rio {
     width: 55px;
     height: 55px;
     position: absolute;
     top: 576px;
     left: 457px;
-    background: url("../images/circle-rio.png");
+    background: #fcec64;
+    color: #648cff;
+    text-align: center;
+    line-height: 55px;
 
 }
 
@@ -625,17 +656,7 @@ body {
 
 }
 
-.title h2 {
-    font-size: 36px;
-    color: #648cff;
-    font-family: 'Ubuntu';
-    font-weight: bold;
-    font-style: normal;
-    margin: 0px;
 
-
-
-}
 .title p {
     color: #999999;
     font-family: 'Ubuntu';
@@ -701,12 +722,36 @@ body {
 
 }
 
-.clouds {
+.cloudy {
     height: 875px;
     position: relative;
+    display: flex;
 }
 
 
+.left-col {
+    width: 50%;
+    position: relative;
+
+}
+
+.right-col {
+    width: 50%;
+    position: relative;
+
+}
+
+.right-col-in {
+    position: absolute;
+    top: 221px;
+    z-index: 4;
+}
+
+.left-col-in {
+    position: absolute;
+    top: 221px;
+    z-index: 4;
+}
 
 .gradtext {
     color: #ededf6;
@@ -716,30 +761,293 @@ body {
     font-style: normal;
     transform: rotate(90deg);
     position: absolute;
-    top: 282px;
+    top: 302px;
 
 }
 
 .display-cloudy {
-    background: url("../images/Display-cloudy.png");
+    background: url("../images/display-cloudy.png");
     background-position: center;
     height: 605px;
     width: 289px;
+
+
+}
+
+.display-sunny {
+    background: url("../images/display-sunny.png");
+    background-position: center;
+    height: 605px;
+    width: 289px;
+
+
+}
+
+.display-rainy {
+    background: url("../images/display-rainy.png");
+    background-position: center;
+    height: 605px;
+    width: 289px;
+
+
+}
+
+.place {
     position: absolute;
-    top: 90px;
-    left: 90px;
+    top: 135px;
+    left: 91px;
     z-index: 4;
 
 }
 
-.sunny {
-    height: 875px;
+
+
+.circle {
+    border-radius: 50px;
+    position: absolute;
+    z-index: 4;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+.cloud {
+    width: 92px;
+    height: 92px;
+    background: #fcec64;
+    top: 303px;
+    left: 326px;
+    font-size: 18px;
+    line-height: 92px;
+    color: white;
+}
+
+.fifteen {
+    width: 92px;
+    height: 92px;
+    background: #6ca3ff;
+    bottom: 271px;
+    left: 22px;
+    font-size: 29px;
+    line-height: 92px;
+    color: white;
+}
+
+.sun {
+    width: 92px;
+    height: 92px;
+    background: #f2a14e;
+    top: 303px;
+    left: 326px;
+    font-size: 18px;
+    line-height: 92px;
+    color: white;
+
+}
+
+.thirtyfive {
+    width: 92px;
+    height: 92px;
+    background: #fc6a42;
+    bottom: 271px;
+    left: 22px;
+    font-size: 29px;
+    line-height: 92px;
+    color: white;
 }
 
 .rain {
-    height: 875px;
+    width: 92px;
+    height: 92px;
+    background: #b8faee;
+    top: 303px;
+    left: 326px;
+    font-size: 18px;
+    line-height: 92px;
+    color: #7e8c91;
+
 }
 
+.nine {
+    width: 92px;
+    height: 92px;
+    background: #7693c8;
+    bottom: 271px;
+    left: 22px;
+    font-size: 29px;
+    line-height: 92px;
+    color: white;
+}
+
+.icon-clouds {
+    background: url("../images/icon-clouds.png");
+    height: 63px;
+    width: 121px;
+
+}
+
+.icon-sunny {
+    background: url("../images/icon-sunny.png");
+    height: 62px;
+    width: 62px;
+
+}
+
+.icon-hum {
+    background: url("../images/icons-hum.png");
+    width: 155px;
+    height: 60px;
+}
+
+
+.sunny {
+    height: 875px;
+    position: relative;
+    display: flex;
+
+}
+
+
+.rainy {
+    height: 875px;
+    position: relative;
+    display: flex;
+}
+
+.review {
+    height: 134px;
+    text-align: center;
+
+}
+
+.quotes {
+    height: 611px;
+    display: flex;
+
+}
+
+
+.quotes-in {
+    font-size: 24px;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.saying  {
+    line-height: 50px;
+    margin-top: 25px;
+
+
+}
+
+.author {
+    font-size: 18px;
+
+}
+
+.left-column {
+    width: 50%;
+}
+
+.right-column {
+    width: 50%;
+}
+
+.review-in p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.quote-open p {
+    font-size: 200px;
+    position: absolute;
+    top: -85px;
+    color: #648cff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.quote-close p {
+    font-size: 200px;
+    position: absolute;
+    bottom: -60px;
+    left: 470px;
+    color: #648cff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.quote p {
+    font-size: 200px;
+    position: relative;
+    bottom: 100px;
+}
+
+
+.download-section {
+    background: #648cff;
+    height: 463px;
+    overflow: hidden;
+
+}
+
+.how-to {
+    width: 50%;
+    float: left;
+
+}
+
+.stores {
+    display: flex;
+}
+
+.app-store-icon{
+    background: url("../images/app-store-icon.png");
+    width: 147px;
+    height: 45px;
+}
+
+.google-play-icon {
+    background: url("../images/google-play-icon.png");
+    width: 139px;
+    height: 45px;
+
+}
+
+.group-display {
+    position: relative;
+    display: flex;
+    width: 50%;
+    top: 63px;
+    z-index: 4;
+}
+
+.pos-cloudy{
+    position: absolute;
+    left: 75px;
+    top: 65px;
+}
+
+.pos-sunny {
+    position: absolute;
+    left: 290px;
+    z-index: 4;
+}
+
+.pos-rainy {
+    position: absolute;
+    left: 505px;
+    top: 65px;
+}
+
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
 
 .stripes {
     position: relative;
@@ -762,3 +1070,11 @@ body {
 .col:first-child {
     border-left: 1px solid #ededf6;
 }
+
+.footer {
+    height: 372px;
+    background: #353854;
+}
+
+
+
